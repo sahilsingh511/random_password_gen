@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Password Generator</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="pg.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Password Generator</h2>
+            <div class="show_password">
+                <input type="text" name="password" value="" class="showpassword">
+                <span class="clipboard">&#x1F4CB;</span>
+            </div>
+            <div class="condition pw_len">
+                <span class="inclusion">Password length</span>
+                <input type="number" name="length" class="pw_length" value="" min="0" max="50">
+            </div>
+            <div class="condition uppercase">
+                <span class="inclusion">Include uppercase letters</span>    
+                <input type="checkbox" name="checkbox" class="check checkforuppercase">
+            </div>
+            <div class="condition lowercase">
+                <span class="inclusion">Include lowercase letters</span> 
+                <input type="checkbox" name="checkbox" class="check checkforlowercase">
+            </div>
+            <div class="condition numbers">
+                <span class="inclusion">Include numbers</span> 
+                <input type="checkbox" name="checkbox" class="check checkfornumbers">
+            </div>
+            <div class="condition symbols">
+                <span class="inclusion">Include symbols</span> 
+                <input type="checkbox" name="checkbox" class="check checkforsymbols">
+            </div>
+            <button class="generate_pw">Generate Password</button>
+        </div>
+        <script type="text/javascript" src="pg.js"></script>
+    </body>
+</html>
