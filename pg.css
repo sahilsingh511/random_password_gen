@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: indigo;
+    min-height: 100vh;
+}
+
+.container {
+    width: 35%;
+    padding: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+.showpassword {
+    width: 90%;
+    padding: 0.5rem;
+    text-align: center;
+    /*border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;*/
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+}
+
+.condition {
+    width: 100%;
+    margin: 0.6rem 0;
+}
+
+.pw_len {
+    margin-top: 1.4rem;
+}
+
+.symbols {
+    margin-bottom: 1.4rem;
+}
+
+.pw_length, .check {
+   float: right;
+}
+
+.pw_length {
+    width: 15%;
+}
+
+.generate_pw {
+    background-color: rgb(130, 31, 187);
+    width: 100%;
+    padding: 0.7rem 2rem;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
